@@ -151,17 +151,26 @@ class YoutubeDataAPI {
         $chapter_start_times = $matches[1];
         $chapter_heading_texts = $matches[3];
 
+        //チャプター開始時間一覧をループする中で、チャプター毎の開始時間/終了時間/タイトルを取得してパースしていく
         $chapters = [];
         foreach ($chapter_start_times as $key => $start_time) {
+            //次のチャプターが現在のチャプターの終了時間となるので、次のチャプターのキーを用意
             $next_key = $key + 1;
+            //別途用意した関数で、H:i:sの時間を秒数に変換して取得
             $start_seconds = $this->h_i_s_to_seconds($start_time);
+            //次のチャプターが存在する場合、次のチャプターの開始時間を現在のチャプターの終了時間にする為に取得する
+            //存在しない場合、引数として予め受け取っておいたISO8601形式の動画の再生時間を、別途用意した関数でH:i:s形式に変換して取得
             $end_time = $chapter_start_times[$next_key] ?? $this->iso8601_to_h_i_s($duration);
+            //H:i:sで用意した終了時間を、秒数に変換
             $end_seconds = $this->h_i_s_to_seconds($end_time);
+            //チャプタータイトルから文字列先頭末尾のスペースを除去
             $chapter_text = preg_replace("/(^\s+)|(\s+$)/u", "", $chapter_heading_texts[$key]);
+            //通常の動画URLに「?t=チャプター開始秒数s」のクエリパラメーターを付与した、チャプター用URLを取得
             $chapter_url = $this->get_youtube_url_from_id($youtube_id, [
                 't' => "{$start_seconds}s",
             ]);
 
+            //パースしたチャプター情報を格納していく
             $chapters[] = [
                 '@type' => 'Clip',
                 'name' => $chapter_text,
