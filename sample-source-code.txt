@@ -1,0 +1,21 @@
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=2erSMOdn4iE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=2erSMOdn4iE
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:create-block/youtube-block {"videoTitle":"「長所はコミュニケーション能力」を差別化する！言い換えや例文を紹介【就活】","videoEmbedUrl":"https://www.youtube.com/watch?v=MJO9sYOFzjo","videoEmbedCode":"\u003ciframe title=\u0022「長所はコミュニケーション能力」を差別化する！言い換えや例文を紹介【就活】\u0022 width=\u0022600\u0022 height=\u0022338\u0022 src=\u0022https://www.youtube.com/embed/MJO9sYOFzjo?feature=oembed\u0022 frameborder=\u00220\u0022 allow=\u0022accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\u0022 allowfullscreen\u003e\u003c/iframe\u003e"} -->
+<div class="wp-block-create-block-youtube-block"><p class="youtube-block-title"><svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.932 3.44909C30.5736 2.09937 29.5177 1.03651 28.1766 0.675797C25.746 0.0202358 16 0.0202365 16 0.0202365C16 0.0202365 6.25393 0.0202358 3.82347 0.675797C2.48242 1.03651 1.4263 2.09937 1.06806 3.44892C0.416748 5.89549 0.416748 10.9994 0.416748 10.9994C0.416748 10.9994 0.416748 16.1033 1.06788 18.5498C1.4263 19.8992 2.48242 20.9622 3.82347 21.323C6.25393 21.9785 16 21.9785 16 21.9785C16 21.9785 25.7462 21.9785 28.1764 21.3231C29.5177 20.9622 30.5736 19.8994 30.932 18.5498C31.5833 16.1033 31.5833 10.9994 31.5833 10.9994C31.5833 10.9994 31.5833 5.89532 30.932 3.44909Z" fill="#FF0000"></path><path d="M12.8125 15.6328L20.9583 10.9987L12.8125 6.36447V15.6328Z" fill="white"></path></svg>「長所はコミュニケーション能力」を差別化する！言い換えや例文を紹介【就活】</p><div class="youtube-block-embed__wrapper"><iframe title="「長所はコミュニケーション能力」を差別化する！言い換えや例文を紹介【就活】" width="600" height="338" src="https://www.youtube.com/embed/MJO9sYOFzjo?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="youtube-block-subscribeButton"><a class="youtube-block-link" href="https://www.youtube.com/channel/UCQVSXO2iwgwCJI-OKSc8-EQ" target="_blank" rel="noopener noreferrer">公式チャンネルはこちら</a><div class="g-ytsubscribe" data-channelid="UCQVSXO2iwgwCJI-OKSc8-EQ" data-layout="full" data-count="default"></div></div></div>
+<!-- /wp:create-block/youtube-block -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/embed/7-D1-dJFnoo","type":"rich","providerNameSlug":"埋め込みハンドラー","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-rich is-provider-埋め込みハンドラー wp-block-embed-埋め込みハンドラー wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/embed/7-D1-dJFnoo
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:embed {"url":"https://youtu.be/NG9YXwu4I0w","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://youtu.be/NG9YXwu4I0w
+</div></figure>
+<!-- /wp:embed -->
