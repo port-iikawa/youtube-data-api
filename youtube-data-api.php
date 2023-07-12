@@ -34,15 +34,22 @@ class YoutubeDataAPI {
         //今回のように、URLをマッチさせたい時に、/をエスケープしなくて良いので便利
         preg_match_all("#{$patterns}#", $content, $matches);
 
+        //マッチするものが無かった場合は、空の配列をreturn
         if(empty($matches[0])) {
             return [];
         }
 
+        //3パターンでマッチしたID達を1つの配列にまとめる
+        //array_merge($matches[1], $matches[2], $matches[3])と同じ
         $youtube_ids = [...$matches[1], ...$matches[2], ...$matches[3]];
+        //重複を削除
         $youtube_ids = array_unique($youtube_ids);
+        //空文字列の要素を削除
         $youtube_ids = array_filter($youtube_ids, 'strlen');
+        //配列のkeyを0から振り直す
         $youtube_ids = array_values($youtube_ids);
 
+        //綺麗になった配列をreturn
         return $youtube_ids;
     }
 
