@@ -18,12 +18,20 @@ class YoutubeDataAPI {
      */
     private function get_youtube_id(): array {
         $content = file_get_contents("sample-source-code.txt");
+
+        //3パターンのYoutubeのURLをマッチさせる過程で、同時にグループマッチングを利用して、ID部分をマッチさせる為の正規表現
         $patterns = [
             'https://www.youtube.com/embed/([0-9a-zA-Z-_]+)',
             'https://www.youtube.com/watch\?v=([0-9a-zA-Z-_]+)',
             'https://youtu.be/([0-9a-zA-Z-_]+)',
         ];
+
+        //配列で用意した3パターンの正規表現を、|で区切ってOR検索の正規表現とする
         $patterns = implode('|', $patterns);
+
+        //正規表現の実行
+        //PHPの場合、正規表現のデリミタに「/」以外の文字列を利用出来る
+        //今回のように、URLをマッチさせたい時に、/をエスケープしなくて良いので便利
         preg_match_all("#{$patterns}#", $content, $matches);
 
         if(empty($matches[0])) {
